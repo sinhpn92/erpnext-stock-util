@@ -6,5 +6,5 @@ from erpnext.stock.doctype.stock_entry.stock_entry import StockEntry
 
 class CustomStockEntry(StockEntry):
     def validate_qty(self):
-        frappe.logger().info("--->>>> CustomStockEntry:validate_qty");
+        frappe.throw(_("--->>>>CustomStockEntry:validate_qty").format())
         pass
